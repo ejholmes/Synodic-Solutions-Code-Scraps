@@ -5,7 +5,7 @@
  * Sluggable Behavior class file.
  *
  * @filesource
- * @author Mariano Iglesias
+ * @author Mariano Iglesias (patched by Eric Holmes)
  * @link http://cake-syrup.sourceforge.net/ingredients/sluggable-behavior/
  * @version	$Revision: 36 $
  * @license	http://www.opensource.org/licenses/mit-license.php The MIT License
