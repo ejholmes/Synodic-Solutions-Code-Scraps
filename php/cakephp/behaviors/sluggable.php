@@ -122,7 +122,7 @@ class SluggableBehavior extends ModelBehavior
 
 				if (!empty($Model->id))
 				{
-					$conditions[$Model->alias . '.' . $Model->primaryKey] = '!= ' . $Model->id;
+					$conditions[$Model->alias . '.' . $Model->primaryKey . '<>'] = $Model->id;
 				}
 
 				$result = $Model->find('all', array('conditions' => $conditions, 'fields' => array($Model->primaryKey, $this->__settings[$Model->alias]['slug']), 'recursive' => -1));
