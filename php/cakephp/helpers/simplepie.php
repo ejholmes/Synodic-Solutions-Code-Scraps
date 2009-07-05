@@ -13,8 +13,13 @@ class SimplepieHelper extends AppHelper {
 
 	function __construct() {
 		$this->cache = CACHE . 'rss' . DS;
-	} 
+	}
 	
+	
+	/**
+	 * returns a simplepie feed object.
+	 *
+	 */
 	function feed($feed_url, $limit = 0)
 	{
 		if (!file_exists($this->cache)) {
@@ -26,7 +31,7 @@ class SimplepieHelper extends AppHelper {
 		$feed = new SimplePie();
 		$feed->set_feed_url($feed_url);
 		$feed->set_cache_location($this->cache);
-		$feed->set_item_limit(5);
+		$feed->set_item_limit($limit);
 		$feed->strip_htmltags(array('img'));
 		
 		//retrieve the feed
