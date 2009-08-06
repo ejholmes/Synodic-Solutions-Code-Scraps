@@ -11,7 +11,7 @@ App::import('Core', 'HttpSocket');
  *
  * @filesource
  * @author Eric Holmes
- * @link ''
+ * @link http://github.com/ejholmes/Synodic-Solutions-Code-Scraps/blob/master/php/cakephp/components/prowl.php
  * @package app
  * @subpackage app.controllers.components
  */
